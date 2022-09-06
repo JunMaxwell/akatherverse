@@ -63,12 +63,12 @@ const MainAppComponent = (): JSX.Element => {
         }
 
         // ANIMATE
-        function animate2() {
+        function animate() {
             controls.update()
             renderer.render(scene, camera);
-            requestAnimationFrame(animate2);
+            requestAnimationFrame(animate);
         }
-        animate2();
+        animate();
     };
 
     const load = () => {
